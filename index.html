@@ -43,6 +43,20 @@
     pointer-events: all;
   }
 
+  .slide::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('LightNet Logo Square.png') center center / 40% no-repeat;
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .slide > * {
+    position: relative;
+    z-index: 1;
+  }
+
   /* ---- Title Slide ---- */
   .slide-title {
     background: linear-gradient(135deg, #1a2744 0%, #2c4a7c 100%);
